@@ -1,0 +1,58 @@
+a:link {
+  color: #0000aa;
+  font-weight:bold;
+  text-decoration: none;
+  font-family: arial;
+}
+a:visited {
+  color: #7777ff;
+  font-weight:bold;
+  text-decoration: none;
+  font-family: arial;
+}
+a:hover {
+  color: #ffffff;
+  font-weight:bold;
+  background: #0000ff;
+  text-decoration: none;
+  font-family: arial;
+}
+a:active {
+  color: #ffffff;
+  font-weight:bold;
+  background: #0000aa;
+  text-decoration: none;
+  font-family: arial;
+}
+table, th, td {
+  border: 1px solid black;
+}
+th {
+  background-color: #4d3319;
+  color: #ffffff;
+  font-weight: bold;
+  font-family: sans-serif;
+  text-align: center;
+}
+td:nth-child(2), td:nth-child(3) {
+  text-align: center;
+}
+tr.book {
+  background: #bf8040;
+  text-align: center;
+}
+td.completed {
+  background: #ccff99;
+}
+td.inprogress {
+  background: #ffff99;
+}
+.section {
+  margin-left: 1em;
+}
+.subsection {
+  margin-left: 2em;
+}
+.subsubsection {
+  margin-left: 3em;
+}
