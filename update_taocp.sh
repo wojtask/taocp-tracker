@@ -5,7 +5,7 @@ TAOCPDIR="$( cd "$(dirname "$0")" >/dev/null 2>&1 ; pwd -P )"
 DIFFPDF=diff-pdf/diff-pdf
 NEW_UPDATES=
 
-for code in {7..16}; do
+for code in {7..20}; do
     for letter in a b c; do
         FASC=fasc${code}${letter}.ps.gz
         OLDMD5=`sha1sum $TAOCPDIR/$FASC 2>/dev/null | cut -d' ' -f1`
@@ -15,7 +15,7 @@ for code in {7..16}; do
             rm $TAOCPDIR/$FASC
         else
             NEWMD5=`sha1sum $TAOCPDIR/$FASC 2>/dev/null | cut -d' ' -f1`
-            echo -n "Checking ${FASC%.ps.gz}... "
+            echo -n "Updating ${FASC%.ps.gz}... "
 
             if [ ! $OLDMD5 ]; then
                 echo -en '**\e[5;32mNEW!\e[0m** (Please update the report manually)'
